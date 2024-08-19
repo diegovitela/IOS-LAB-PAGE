@@ -1,0 +1,119 @@
+
+.text-section {
+    text-align: center;
+    margin-top: 100px; /* Ajusta según el espacio necesario debajo del navbar */
+  }
+  
+  /* Tamaños de texto grandes */
+  .large-text {
+    font-size: 60px; /* Tamaño base */
+    font-weight: bold;
+    color: #f0ebeb;
+    margin: 5px 0; /* Ajusta el espacio arriba y abajo del texto grande */
+  }
+  
+  /* Tamaños de texto pequeños */
+  .small-text {
+    font-size: 18px; /* Tamaño de la fuente ajustado a 18px */
+    color: #f0ebeb;
+    margin: 5px 0; /* Ajusta el espacio arriba y abajo del texto pequeño */
+    font-weight: bold; /* Hace el texto en negrita */
+}
+  
+.small2-text {
+    font-size: 18px; /* Tamaño de texto ajustado a 18px */
+    color: #f3efef;
+    margin: 2px 0; /* Espaciado */
+    font-weight: normal; /* Peso regular */
+}
+
+  
+  /* Media queries para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .large-text {
+      font-size: 40px; /* Tamaño más pequeño para pantallas pequeñas */
+    }
+  
+    .small-text {
+      font-size: 16px; /* Tamaño más pequeño para pantallas pequeñas */
+    }
+  
+    .small2-text {
+      font-size: 16px; /* Tamaño más pequeño para pantallas pequeñas */
+    }
+  }
+  
+  /* Media queries para pantallas muy pequeñas */
+  @media (max-width: 480px) {
+    .large-text {
+      font-size: 30px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+    }
+  
+    .small-text {
+      font-size: 14px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+    }
+  
+    .small2-text {
+      font-size: 14px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+    }
+  }
+  
+
+
+
+
+  .text-section {
+    text-align: center;
+  }
+  
+  
+/* TextSection.css */
+
+.carousel-container {
+  width: 100%; /* Ajusta el ancho del contenedor */
+  overflow: hidden; /* Oculta el desbordamiento */
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite; /* Aplica la animación continua */
+  width: calc(200%); /* Ancho total del track para incluir duplicados */
+}
+
+.carousel-item {
+  flex: 0 0 25%; /* Ajusta el ancho de cada item al 25% del contenedor */
+  box-sizing: border-box; /* Incluye el padding y border en el ancho total del elemento */
+  padding: 10px; /* Añade un poco de espacio alrededor de las imágenes */
+}
+
+.carousel-item img {
+  width: 100%; /* Hace que la imagen ocupe el ancho del contenedor */
+  height: 150px; /* Ajusta la altura de las imágenes */
+  object-fit: cover; /* Mantiene la proporción de la imagen y recorta si es necesario */
+  border-radius: 8px; /* Opcional: añade bordes redondeados a las imágenes */
+}
+
+/* Animación de desplazamiento continuo */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+
+  
+  
+
+  
+
+  

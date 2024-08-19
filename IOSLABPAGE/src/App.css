@@ -1,0 +1,46 @@
+/* Fondo de la página con gradiente de morado a blanco */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  /* Fondo principal con un tamaño específico */
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), 
+              linear-gradient(#070113, #630dff 54%,#fff);
+  background-size: 100% 100%; /* Ajusta el tamaño del fondo según sea necesario */
+  
+  /* Color de fondo que se muestra después del fondo principal */
+  background-color: #fff; /* Color blanco visible cuando el fondo principal termina */
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Aplica la animación al contenedor principal */
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
