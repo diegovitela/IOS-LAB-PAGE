@@ -4,11 +4,13 @@ Bienvenido a la página oficial del iOS Lab de la Universidad Panamericana. Este
 
 ## Descripción del Proyecto
 
-Este sitio web ofrece información detallada sobre el iOS Lab, incluyendo:
+Este sitio web está construido utilizando **React**, una biblioteca de JavaScript para construir interfaces de usuario interactivas. La aplicación está diseñada para proporcionar una experiencia de usuario fluida y eficiente con un enfoque en la presentación clara de la información del iOS Lab.
 
-- Proyectos y aplicaciones desarrolladas por el laboratorio.
-- Recursos y materiales educativos para estudiantes.
-- Información de contacto y enlaces a redes sociales.
+### Tecnologías Utilizadas
+
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **CSS**: Para los estilos y diseño de la página.
+- **Node.js**: Para la ejecución del entorno de desarrollo.
 
 ## Instalación
 
@@ -16,3 +18,4 @@ Para clonar este repositorio en tu máquina local, utiliza el siguiente comando:
 
 ```bash
 git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+
