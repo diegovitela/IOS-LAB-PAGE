@@ -1,119 +1,327 @@
-
-.text-section {
-    text-align: center;
-    margin-top: 100px; /* Ajusta según el espacio necesario debajo del navbar */
-  }
-  
-  /* Tamaños de texto grandes */
-  .large-text {
-    font-size: 60px; /* Tamaño base */
-    font-weight: bold;
-    color: #f0ebeb;
-    margin: 5px 0; /* Ajusta el espacio arriba y abajo del texto grande */
-  }
-  
-  /* Tamaños de texto pequeños */
-  .small-text {
-    font-size: 18px; /* Tamaño de la fuente ajustado a 18px */
-    color: #f0ebeb;
-    margin: 5px 0; /* Ajusta el espacio arriba y abajo del texto pequeño */
-    font-weight: bold; /* Hace el texto en negrita */
-}
-  
-.small2-text {
-    font-size: 18px; /* Tamaño de texto ajustado a 18px */
-    color: #f3efef;
-    margin: 2px 0; /* Espaciado */
-    font-weight: normal; /* Peso regular */
-}
-
-  
-  /* Media queries para pantallas más pequeñas */
-  @media (max-width: 768px) {
-    .large-text {
-      font-size: 40px; /* Tamaño más pequeño para pantallas pequeñas */
-    }
-  
-    .small-text {
-      font-size: 16px; /* Tamaño más pequeño para pantallas pequeñas */
-    }
-  
-    .small2-text {
-      font-size: 16px; /* Tamaño más pequeño para pantallas pequeñas */
-    }
-  }
-  
-  /* Media queries para pantallas muy pequeñas */
-  @media (max-width: 480px) {
-    .large-text {
-      font-size: 30px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
-    }
-  
-    .small-text {
-      font-size: 14px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
-    }
-  
-    .small2-text {
-      font-size: 14px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
-    }
-  }
-  
-
-
-
-
-  .text-section {
-    text-align: center;
-  }
-  
-  
 /* TextSection.css */
 
-.carousel-container {
-  width: 100%; /* Ajusta el ancho del contenedor */
-  overflow: hidden; /* Oculta el desbordamiento */
-  display: flex;
-  align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Deja el fondo del body vacío o personalizado */
+}
+
+/* Estilos para la sección de texto */
+.text-section {
+  text-align: center;
+  margin-top: 100px; /* Ajusta según el espacio necesario debajo del navbar */
+}
+
+/* Tamaños de texto grandes */
+.large-text {
+  font-size: 70px; /* Tamaño base */
+  font-weight: bold;
+  color: #f0ebeb;
+  margin: 5px 0; /* Ajusta el espacio arriba y abajo del texto grande */
+}
+
+/* Tamaños de texto pequeños */
+.small-text {
+  font-size: 30px; /* Tamaño de la fuente ajustado a 18px */
+  color: #f0ebeb;
+  margin: 5px 0; /* Ajusta el espacio arriba y abajo del texto pequeño */
+  font-weight: bold; /* Hace el texto en negrita */
+}
+
+.small2-text {
+  font-size: 30px; /* Tamaño de texto ajustado a 18px */
+  color: #f3efef;
+  margin: 2px 0; /* Espaciado */
+  font-weight: normal; /* Peso regular */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .large-text {
+    font-size: 40px; /* Tamaño más pequeño para pantallas pequeñas */
+  }
+
+  .small-text {
+    font-size: 16px; /* Tamaño más pequeño para pantallas pequeñas */
+  }
+
+  .small2-text {
+    font-size: 16px; /* Tamaño más pequeño para pantallas pequeñas */
+  }
+}
+
+/* Media queries para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .large-text {
+    font-size: 30px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+  }
+
+  .small-text {
+    font-size: 14px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+  }
+
+  .small2-text {
+    font-size: 14px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+  }
+}
+
+/* Estilos para el carrusel de imágenes */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
   position: relative;
 }
 
-.carousel-track {
+.logos:before,
+.logos:after {
+  display: none; /* Ocultar los pseudoelementos */
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 100px; /* Ajusta la altura de las imágenes a un tamaño más grande */
+  margin: 0 40px;
+}
+
+/* Estilos para la segunda sección de texto */
+.text-section2 {
+  text-align: center;
+  color: black;
+}
+
+.text-section2 .small2-text {
+  color: #000; /* Color del texto negro */
+  font-weight: bold; /* Hace la fuente más gruesa */
+  font-size: 35px;
+  
+  /* Agrega un borde o contorno al texto usando text-shadow */
+  text-shadow: 
+    -1px -1px 0 #fff, /* Sombra hacia la esquina superior izquierda */
+    1px -1px 0 #fff,  /* Sombra hacia la esquina superior derecha */
+    -1px 1px 0 #fff,  /* Sombra hacia la esquina inferior izquierda */
+    1px 1px 0 #fff;   /* Sombra hacia la esquina inferior derecha */
+}
+
+
+
+
+
+.text-section2 {
+  padding: 80px 15%; 
+  background-color: #ffffff;
+  text-align: left;
+  font-family: 'Poppins', Arial, sans-serif; /* Cambiar la fuente */
+}
+
+.title {
+  font-size: 150px; 
+  font-weight: 700; /* Negritas */
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 55px; 
+  font-weight: 700; /* Texto normal */
+  color: #111111;
+  margin-bottom: 60px;
+}
+
+.quote {
   display: flex;
-  animation: scroll 20s linear infinite; /* Aplica la animación continua */
-  width: calc(200%); /* Ancho total del track para incluir duplicados */
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px; 
 }
 
-.carousel-item {
-  flex: 0 0 25%; /* Ajusta el ancho de cada item al 25% del contenedor */
-  box-sizing: border-box; /* Incluye el padding y border en el ancho total del elemento */
-  padding: 10px; /* Añade un poco de espacio alrededor de las imágenes */
+.left {
+  flex: 1;
+  margin-right: 50px;
 }
 
-.carousel-item img {
-  width: 100%; /* Hace que la imagen ocupe el ancho del contenedor */
-  height: 150px; /* Ajusta la altura de las imágenes */
-  object-fit: cover; /* Mantiene la proporción de la imagen y recorta si es necesario */
-  border-radius: 8px; /* Opcional: añade bordes redondeados a las imágenes */
+.text-left {
+  font-size: 60px; 
+  font-weight: 700; /* Negritas */
+  line-height: 1.2;
+  color: #111111;
 }
 
-/* Animación de desplazamiento continuo */
-@keyframes scroll {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(-50%);
-  }
+.text-left small {
+  font-size: 30px;
+  font-weight: 400; /* Texto normal */
+  color: #666666;
+  display: block;
+  margin-top: 10px;
+}
+
+.right {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.text-right {
+  font-size: 30px; 
+  font-weight: 700; /* Negritas */
+  line-height: 1.5;
+  color: #111111;
+  font-style: italic;
+  margin-top: 130px;
+}
+
+.author {
+  display: block;
+  margin-top: 10px;
+  font-size: 20px; 
+  color: #111111;
+  font-weight: 700; /* Negritas */
+}
+
+.author-image {
+  width: 50px; /* Ajusta el tamaño según sea necesario */
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black; /* Contorno negro */
+  margin-right: 10px; /* Espacio entre imagen y texto */
+}
+.author-name {
+  font-weight: bold;
+}
+
+.author-role {
+  font-weight: normal;
+}
+
+/*CSS de la imagen grande numero 1  */
+.large-image-container {
+  background-color: #ffffff; /* Fondo blanco sólido para el contenedor */
+  text-align: center; /* Centra la imagen */
+  margin-top: 50px; /* Espacio superior para separar la imagen del contenido anterior */
+  margin-bottom: 50px; /* Espacio inferior para separar la imagen del contenido siguiente */
+  padding: 20px; /* Espacio interior opcional alrededor de la imagen */
+  overflow: hidden; /* Evita que la imagen se desborde fuera del contenedor */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+.large-image {
+  width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+  height: 20000; /* Mantiene la relación de aspecto de la imagen */
+  /* max-width: 12000px; */ /* Puedes eliminar o ajustar este valor según sea necesario */
+  border-radius: 10px; /* Bordes redondeados opcionales */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto llamativo */
+  background-color: #ffffff; /* Asegura que la imagen tenga un fondo blanco */
+}
+/*fin de CSS de la imagen numero 1  */
+
+
+
+.additional-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px; /* Espacio superior opcional */
+  margin-bottom: 50px; /* Espacio inferior opcional */
+}
+
+.left-text {
+  flex: 1;
+  padding-right: 20px; /* Espacio entre el texto y el borde del contenedor */
+}
+
+.right-text {
+  flex: 1;
+  padding-left: 20px; /* Espacio entre el texto y el borde del contenedor */
+}
+
+.left-text h2 {
+  font-size: 50px; /* Tamaño del título opcional */
+  font-weight: bold;
+  color: #111111; /* Color del texto opcional */
+  margin-bottom: 10px; /* Espacio inferior opcional */
+  line-height: 1.2; /* Reduce el espacio entre líneas */
+}
+
+.right-text p {
+  font-size: 30px; /* Tamaño del párrafo opcional */
+  color: #666666; /* Color del texto opcional */
+  line-height: 1.6; /* Espaciado entre líneas opcional */
 }
 
 
 
 
+/* Estilos para el nuevo texto */
+.customize-cart-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px; /* Espacio superior para separar del contenido anterior */
+}
+
+.customize-cart-left, .customize-cart-right {
+  flex: 1;
+  margin: 0 10px; /* Espacio entre los bloques de texto */
+}
+
+.customize-cart-left h2 {
+  font-size: 50px; /* Tamaño del título opcional */
+  font-weight: bold;
+  color: #111111; /* Color del texto opcional */
+  margin-bottom: 10px; /* Espacio inferior opcional */
+  line-height: 1.2; /* Reduce el espacio entre líneas */
+}
+
+.customize-cart-right p {
+  font-size: 30px; /* Tamaño del párrafo opcional */
+  color: #555555; /* Color del texto opcional */
+  line-height: 1.6; /* Ajusta el espaciado entre líneas */
+}
 
 
-  
-  
+.additional-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* Espacio superior opcional */
+  margin-bottom: 30px; /* Espacio inferior opcional */
+}
 
+.additional-image {
+  width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+  height: 600px; /* Ajusta la altura para hacer la imagen más alargada */
+  object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsionarse */
+  border-radius: 10px; /* Bordes redondeados opcionales */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto llamativo */
+}
   
+.custom-text {
+  font-size: 18px;
+  color: #808080;
+}
 
-  
+small {
+  font-size: 1.8rem; /* Ajusta el tamaño según prefieras */
+  color: #808080; /* Un tono gris, puedes ajustarlo si lo deseas */
+}
+
+

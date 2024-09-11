@@ -10,6 +10,8 @@
     align-items: center;
     justify-content: space-between; /* Distribuye el espacio entre los elementos */
     z-index: 1000;
+    backdrop-filter: blur(10px); /* Aplica el desenfoque al contenido detrás del navbar */
+    -webkit-backdrop-filter: blur(10px); /* Prefijo para Safari */
 }
 
 /* Logo del navbar */
